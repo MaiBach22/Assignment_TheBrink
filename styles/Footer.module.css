@@ -90,3 +90,28 @@
     position: relative;
   }
 }
+
+@media (min-width: 1025px) /* hi-res laptops and desktops */ {
+  .content header h1 {
+    font-size: 43px;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .figure {
+    width: 60%;
+    flex-direction: row;
+    gap: 40px;
+  }
+  #img1,
+  #img2 {
+    width: 40%;
+    height: 440px;
+    margin-top: 40px;
+  }
+
+  .img {
+    width: 100%;
+    position: relative;
+  }
+}
