@@ -26,6 +26,8 @@
   grid-row: 1/3;
 }
 
+/* RESPONSIVE SECTION */
+
 @media (max-width: 880px) /* smartphones, iPhone, portrait 480x320 phones */ {
   #banner {
     /* grid-template-columns: 100%;

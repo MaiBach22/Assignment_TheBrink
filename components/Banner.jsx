@@ -11,11 +11,13 @@ const { motion } = require("framer-motion");
 const images = [img1, img2, img3, img4, img5];
 
 function Banner() {
+  // Slider feature
   const [width, setWidth] = useState(0);
-  const carousel = useRef();
-  const imgs = [img1, img2];
+  const carousel = useRef(); // pre-render
+
+  // catch the width of current screen
   useEffect(() => {
-    console.log(carousel.current.scrollWidth, carousel.current.offsetWidth);
+    //console.log(carousel.current.scrollWidth, carousel.current.offsetWidth);
     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
   }, []);
 

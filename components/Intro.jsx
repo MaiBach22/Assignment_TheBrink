@@ -7,11 +7,14 @@ import { useRef, useState, useEffect } from "react";
 const { motion } = require("framer-motion");
 
 function Intro() {
+  // Slider feature
   const [width, setWidth] = useState(0);
-  const carousel = useRef();
-  const imgs = [img1, img2];
+  const carousel = useRef(); // pre-render
+  const imgs = [img1, img2]; // list of images
+
+  // catch the width of current screen
   useEffect(() => {
-    console.log(carousel.current.scrollWidth, carousel.current.offsetWidth);
+    // console.log(carousel.current.scrollWidth, carousel.current.offsetWidth);
     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
   }, []);
 
@@ -42,22 +45,6 @@ function Intro() {
                 </motion.div>
               );
             })}
-            {/* <motion.div className={style.img}>
-              <Image
-                layout="fill"
-                objectFit="cover"
-                src={img1}
-                alt="Ba-Na-Hill Landscape"
-              />
-            </motion.div>
-            <motion.div className={style.img}>
-              <Image
-                layout="fill"
-                objectFit="cover"
-                src={img2}
-                alt="Ba-Na-Hill Landscape"
-              />
-            </motion.div> */}
           </motion.div>
         </motion.div>
       </article>

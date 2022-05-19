@@ -90,6 +90,7 @@
     position: relative;
   }
 }
+/* RESPONSIVE SECTION */
 
 @media (min-width: 1025px) /* hi-res laptops and desktops */ {
   .content header h1 {
