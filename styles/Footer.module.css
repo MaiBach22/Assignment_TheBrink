@@ -1,0 +1,92 @@
+.container {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 640px;
+}
+
+.content {
+  width: 98%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.figure {
+  width: 65%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content header {
+  width: 440px;
+  height: 440px;
+}
+.content header h1 {
+  font-weight: 500;
+  font-size: 42px;
+}
+
+#img1 {
+  width: 440px;
+  height: 440px;
+}
+
+#img2 {
+  width: 440px;
+  height: 440px;
+}
+
+.img {
+  position: relative;
+}
+
+@media (max-width: 1025px) /* smartphones, iPhone, portrait 480x320 phones */ {
+  .container {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: auto;
+    padding-bottom: 100px;
+  }
+
+  .content {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 100px;
+  }
+
+  .content header {
+    width: 100%;
+    height: auto;
+  }
+
+  .content header h1 {
+    font-size: 32px;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .figure {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #img1,
+  #img2 {
+    width: 100%;
+    height: 394px;
+    margin-top: 40px;
+  }
+
+  .img {
+    width: 100%;
+    position: relative;
+  }
+}
